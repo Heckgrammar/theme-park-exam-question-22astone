@@ -15,10 +15,18 @@
             You should use meaningful variable name(s) inyour answer.
             */
             // Write your program and test it with the following test data
-            // 1: 4 people
-            // 2: 10 people
-            // 3: 6 people
+            // 1: 4 people £60
+            // 2: 10 people £145
+            // 3: 6 people £85
             // Commit your changes and add screnshot evidence of your program running to the Readme
+            
+            Console.WriteLine("How many people are in your group?");
+            int groupSize = Convert.ToInt32(Console.ReadLine());
+            int totalCost = groupSize * 15;
+            if (groupSize >= 6) {
+                totalCost -= 5;
+            }
+            Console.WriteLine("Your group will have to pay: £" + totalCost);
 
         }
     }
