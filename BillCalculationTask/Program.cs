@@ -20,14 +20,16 @@
             // 3: 6 people £85
             // Commit your changes and add screnshot evidence of your program running to the Readme
             
-            Console.WriteLine("How many people are in your group?");
-            int groupSize = Convert.ToInt32(Console.ReadLine());
-            int totalCost = groupSize * 15;
-            if (groupSize >= 6) {
-                totalCost -= 5;
+            Console.WriteLine("How many people are in your group?"); 
+            int groupSize = Convert.ToInt32(Console.ReadLine()); //Mark A
+            int totalCost = groupSize * 15; // Mark C 
+            if (groupSize >= 6) { //Mark B AND mark D
+                totalCost -= 5; //Mark E
             }
-            Console.WriteLine("Your group will have to pay: £" + totalCost);
+            Console.WriteLine("Your group will have to pay: £" + totalCost); //Mark F
 
+
+            //6 OUT OF 6 MARKS
         }
     }
 }
